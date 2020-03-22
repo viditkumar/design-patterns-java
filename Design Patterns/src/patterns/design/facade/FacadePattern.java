@@ -1,4 +1,4 @@
-package design.patterns.facade;
+package patterns.design.facade;
 
 public class FacadePattern {
 

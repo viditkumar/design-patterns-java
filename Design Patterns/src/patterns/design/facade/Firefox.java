@@ -1,4 +1,4 @@
-package design.patterns.facade;
+package patterns.design.facade;
 
 import java.sql.Driver;
 
