@@ -1,5 +1,12 @@
 package patterns.design.hf.strategy;
 
+/**
+ * Strategy Pattern defines a family of algorithms. It encapsulates (we used
+ * interfaces here) each one of them, and makes them interchangeable (you can
+ * plug and play). Strategy lets the algorithm vary independently from the
+ * client that uses.
+ * 
+ */
 public class StrategyPattern {
 
 	public static void main(String[] args) {
