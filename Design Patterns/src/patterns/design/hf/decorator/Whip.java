@@ -1,6 +1,6 @@
 package patterns.design.hf.decorator;
 
-public class Whip extends Beverage {
+public class Whip extends Decorator {
 	
 	Beverage beverage;
 
