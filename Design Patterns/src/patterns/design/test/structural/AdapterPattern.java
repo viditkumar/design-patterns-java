@@ -36,7 +36,7 @@ interface SocketAdapter {
 	Volt fetch120Volts();
 }
 
-// Class Adapter
+// Class Adapter -> this extends the source class
 class SocketClassAdapterImpl extends Socket implements SocketAdapter {
 
 	@Override
@@ -55,7 +55,7 @@ class SocketClassAdapterImpl extends Socket implements SocketAdapter {
 	}
 }
 
-// Object Adapter
+// Object Adapter -> this contains(instantiate) the source class
 class SocketObjectAdapterImpl implements SocketAdapter {
 
 	private Socket socket = new Socket();

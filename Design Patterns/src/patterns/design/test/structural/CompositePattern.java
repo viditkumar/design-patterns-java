@@ -7,7 +7,7 @@ import java.util.List;
  * Base
  * It can be an interface or an abstract class with some methods common to all the objects
  */
-interface Shape{
+interface Shapes{
 	void draw(String color);
 }
 
@@ -15,7 +15,7 @@ interface Shape{
  * Leaf
  * It implements base component
  */
-class Triangle implements Shape{
+class Triangle implements Shapes{
 
 	@Override
 	public void draw(String color) {
@@ -27,7 +27,7 @@ class Triangle implements Shape{
  * Leaf
  * It implements base component
  */
-class Circle implements Shape{
+class Circle implements Shapes{
 
 	@Override
 	public void draw(String color) {
@@ -40,21 +40,21 @@ class Circle implements Shape{
  * It behaves same as leaf, but it can contain group of leaf elements
  * It consists of leaf elements and implements the operations in base component
  */
-class Drawing implements Shape{
+class Drawing implements Shapes{
 
-	List<Shape> shapes = new ArrayList<>();
+	List<Shapes> shapes = new ArrayList<>();
 	
 	@Override
 	public void draw(String color) {
-		for(Shape shape : shapes)
+		for(Shapes shape : shapes)
 			shape.draw(color);
 	}
 	
-	public void addShape(Shape shape){
+	public void addShape(Shapes shape){
 		shapes.add(shape);
 	}
 	
-	public void removeShape(Shape shape){
+	public void removeShape(Shapes shape){
 		shapes.remove(shape);
 	}
 	

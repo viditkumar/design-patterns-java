@@ -30,18 +30,20 @@ class BComputer{
 		return isGraphics;
 	}
 	
-	public BComputer(BComputerBuilder builder) {
+	// main class has private constructor with Builder class as arguments
+	private BComputer(BComputerBuilder builder) {
 		this.hardDisk = builder.hardDisk;
 		this.ram = builder.ram;
 		this.isGraphics = builder.isGraphics;
 	}
 	
-	public static class BComputerBuilder{
+	public static class BComputerBuilder{ // static nested class
 		// copy all parameters
 		private String hardDisk;
 		private String ram;
 		private boolean isGraphics;
 		
+		// builder class has public constructor with only required parameters
 		public BComputerBuilder(String hardDisk, String ram){
 			this.hardDisk = hardDisk;
 			this.ram = ram;

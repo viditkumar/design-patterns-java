@@ -10,5 +10,7 @@ public class DesignPatternTest {
 		ProxyPattern.testProxyPattern();
 		
 		DecoratorPattern.testDecoratorPattern();
+		
+		BridgePattern.testBridgePattern();
 	}
 }
